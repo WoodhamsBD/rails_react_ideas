@@ -3,9 +3,10 @@ module Api::V1
 
     # Index method - Render all Ideas as JSON
     def index
-      @ideas = Ideas.all
-      render @json: @ideas
+      @ideas = Idea.all
+      render json: @ideas
     end
 
     # End Class
   end
+end
